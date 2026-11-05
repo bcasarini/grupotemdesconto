@@ -31,7 +31,7 @@
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
       line-height: 1.5;
     }
-    main { max-width: 34rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; text-align: center; }
+    main { max-width: 34rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; text-align: center; container-type: inline-size; }
     .logo { width: 11rem; height: 11rem; border-radius: 50%; display: block; margin: 0.5rem auto 1.25rem; }
     h1 { margin: 0; font-size: clamp(2rem, 9vw, 2.75rem); line-height: 1.05; font-weight: 900; letter-spacing: -0.01em; }
     .highlight {
@@ -43,7 +43,7 @@
       transform: skewX(-8deg);
     }
     .highlight span { display: inline-block; transform: skewX(8deg); }
-    .lead { margin: 1.25rem 0 1.5rem; font-size: 1.15rem; color: var(--text); }
+    .lead { margin: 1.25rem 0 1.5rem; font-size: clamp(0.75rem, calc(100cqw / 22), 1.15rem); white-space: nowrap; color: var(--text); }
     .cta {
       display: block;
       padding: 1.1rem 1.5rem;
@@ -80,7 +80,7 @@
   <main>
     <img class="logo" src="logo.png" width="176" height="176" alt="Tem Desconto">
     <h1>Promoção boa<br><span class="highlight"><span>acaba rápido</span></span></h1>
-    <p class="lead">As melhores ofertas chegam direto no seu WhatsApp, na hora.</p>
+    <p class="lead">Ofertas direto no seu WhatsApp, na hora.</p>
     <a class="cta" href="https://chat.whatsapp.com/Hkkg9qIIPle2K2bnbSbaUo?mode=gi_t" rel="noopener">Entrar no grupo</a>
     <p class="note">Grátis. Sai quando quiser.</p>
 
